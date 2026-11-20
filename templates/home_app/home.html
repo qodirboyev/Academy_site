@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Academy | (⌐■_■)</title>
 
@@ -13,6 +13,7 @@
     <!-- link teglar -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
 
 
     <!--  script teglar  -->
@@ -22,23 +23,23 @@
 <body>
 
     <!-- menu_icon -->
-    <div class="menu_icon" onclick="menu()">
+    <section class="menu_icon" onclick="menu()">
         <i id="menu_icon" class="fa-solid fa-bars"></i>
-    </div>
+    </section>
     <!-- /menu_icon -->
 
     <!-- Header section -->
-    <header class="header_section" id="header_section">
+    <section class="header_section" id="header_section">
         <div class="academy_info">
-            <h1 class="academy_name">Academy | <span>(⌐■_■)</span></h1>
+            <h1 class="academy_name">Academya | <span class="emoje">(⌐■_■)</span></h1>
             <div class="menu">
                 <ul>
-                    <li><i class="fa-solid fa-chevron-right"></i><a href="">asosiy sahifa</a></li>
-                    <li><i class="fa-solid fa-chevron-right"></i><a href="">biz haqimizda</a></li>
-                    <li><i class="fa-solid fa-chevron-right"></i><a href="">kurslar</a></li>
-                    <li><i class="fa-solid fa-chevron-right"></i><a href="">ustazlar</a></li>
-                    <li><i class="fa-solid fa-chevron-right"></i><a href="">o'quvchilar</a></li>
-                    <li><i class="fa-solid fa-chevron-right"></i><a href="">admin bilan bog'lanish</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="">Asosiy sahifa</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="">Biz haqimizda</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="">Kurslar</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="">Ustazlar</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="">O'quvchilar</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="">Admin bilan bog'lanish</a></li>
                 </ul>
             </div>
         </div>
@@ -51,43 +52,135 @@
                 <span>user_auth</span>
             </div>
         </div>
-    </header>
+    </section>
     <div class="menu_back_blur" id="menu_back" onclick="menu_back_blur()"></div>
     <!-- /Header section -->
 
     <!--  main section  -->
+    <div class="container">
     <section class="main_section" id="main_section">
-        Asosiy (main) sahifa
+        <div>
+            <div class="welcome">
+                <h1 class="academy_name">Academya | <span class="emoje">(⌐■_■)</span></h1>
+                <p>Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since 1966,
+                    when designers at Letraset and James Mosley, the
+                    librarian at St Bride Printing Library in London, took
+                    a 1914 Cicero translation and scrambled it to make dummy
+                    text for Letraset's Body Type sheets. It has survived
+                    not only many decades, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was
+                    popularised thanks to these sheets and more recently with
+                    desktop publishing software like Aldus PageMaker and
+                    Microsoft Word including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+        <div class="div_2">
+            <!--  nav section  -->
+            <nav class="nav_section" id="nav_section">
+                <a href=""><i class="fa-solid fa-house"></i> Asosiy sahifa</a>
+                <a href=""><i class="fa-solid fa-face-smile-wink"></i> Biz haqimizda</a>
+                <a href=""><i class="fa-solid fa-file-pen"></i> Kurslar</a>
+                <a href=""><i class="fa-solid fa-chalkboard-user"></i> Ustazlar</a>
+                <a href=""><i class="fa-solid fa-user-graduate"></i> O'quvchilar</a>
+                <a href=""><i class="fa-solid fa-phone"></i> Admin bilan bog'lanish</a>
+            </nav>
+            <!--  /nav section  -->
+            <!-- result section -->
+            <section class="result_section" id="result_section">
+                <div class="users"><i class="fa-solid fa-user"></i>Obunachilar:501</div>
+                <div class="hodimlar"><i class="fa-solid fa-user-tie"></i>Hodimlar: 13</div>
+                <div class="students"><i class="fa-solid fa-user-graduate"></i>Talabalar: 232</div>
+            </section>
+            <!-- /result section -->
+        </div>
     </section>
+    </div>
     <!--  /main section  -->
 
-    <!--  nav section  -->
-    <nav class="nav_section" id="nav_section">
-        Menu (nav) sahifa
-    </nav>
-    <!--  /nav section  -->
+
 
     <!--  about section  -->
+    <div class="container">
     <section class="about_section" id="about_section">
-        Biz haqmizad (about me)
+        <h1>Biz haqimizda <i class="fa-solid fa-face-grin-hearts"></i></h1>
+        <div>
+            <div class="we-images">
+                <div class="carusel">
+                    <img src="{% static 'photo/about_img_1.png' %}" alt="image">
+                    <img src="{% static 'photo/about_img_2.png' %}" alt="image">
+                    <img src="{% static 'photo/about_img_3.png' %}" alt="image">
+                    <img src="{% static 'photo/about_img_4.png' %}" alt="image">
+                    <img src="{% static 'photo/about_img_5.png' %}" alt="image">
+                    <img src="{% static 'photo/about_img_6.png' %}" alt="image">
+                </div>
+            </div>
+            <div class="about">
+                <p>
+                    <h1 class="academy_name">Academya | <span class="emoje">(⌐■_■)</span></h1>
+                    Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since 1966,
+                    when designers at Letraset and James Mosley, the
+                    librarian at St Bride Printing Library in London, took
+                    a 1914 Cicero translation and scrambled it to make dummy
+                    text for Letraset's Body Type sheets.
+                </p>
+            </div>
+        </div>
     </section>
+    </div>
     <!-- /about section  -->
 
-    <!-- result section -->
-    <section class="result_section" id="result_section">
-        Bizni natija va statistikalar bolimi
-    </section>
-    <!-- /result section -->
 
     <!-- Contact-us section -->
+    <div class="container">
     <section class="contact-us_section" id="contact-us_section">
-        Biz bilan bo'g'lanish bo'limi
+        <h1><i class="fa-solid fa-phone"></i> Admin bilan bog'lanish</h1>
+        <div class="contacts">
+            <div class="admin">
+                <h3>Adminga murojat uchun.<i class="fa-solid fa-user-tie"></i></h3>
+                <p><i class="fa-solid fa-phone"></i> Telefon raqam: +998 99 888 98 98</p>
+                <p><i class="fa-brands fa-telegram"></i> <a href="" onclick="alert('Account topilmadi😅')">@academy_admin</a></p>
+            </div>
+            <div class="courses">
+                <h3>Kursga yo'zilish <i class="fa-solid fa-file-pen"></i></h3>
+                <label for="name">ism</label>
+                <input type="text" name="name" id="name" placeholder="ism kiriting...">
+                <label for="surname">familiya</label>
+                <input type="text" name="surname" id="surname" placeholder="familiya kiriting...">
+                <label for="phone">telefon raqam</label>
+                <input type="text" name="phone" id="phone" placeholder="raqam kiriting...">
+                <label for="course">Kursni tanlash</label>
+                <select name="course" id="course">
+                    <option value="backend">Backend <i class="fa-solid fa-gears"></i></option>
+                    <option value="frontend">Frontend <i class="fa-solid fa-paintbrush"></i></option>
+                    <option value="CS">Kiber xavfsizlik <i class="fa-solid fa-user-secret"></i></option>
+                    <option value="os-system">Tizim admistrator <i class="fa-solid fa-gear"></i></option>
+                </select>
+                <button type="button" id="button"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
     </section>
+    </div>
     <!-- /Contact-us section -->
 
     <!--  footer section  -->
     <footer class="footer_section" id="footer_section">
-        footer qism
+        <div class="container">
+            <div class="footer_div">
+                <div class="media">
+                    <a href="" onclick="alert('Telegram kanal toplimadi😅')"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="" onclick="alert('YouTube kanal toplimadi😅')"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="" onclick="alert('Insatgram account toplimadi😅')"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div>
+                    <p>© 2026 Academy site — Academya uchun web-site.</p>
+                    <span>admin@gmail.com</span>
+                </div>
+            </div>
+        </div>
     </footer>
     <!--  /footer section  -->
 </body>

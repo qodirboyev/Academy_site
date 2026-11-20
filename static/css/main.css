@@ -23,14 +23,18 @@ a{
 /* ======== header styles ======== */
 .menu_icon{
     position: fixed;
-    top: 10px;
-    left: 15px;
+    top: 0;
     z-index: 5;
     color: rgb(69 69 232 / 0.88);
     font-size: 2rem;
+    background-color: rgb(255 255 255 / 0.97);
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: 0 2px 2px rgb(0 0 0 / 0.52);
 }
 
 .menu_back_blur{
+    top: 0;
     position: fixed;
     right: 0;
     width: 75%;
@@ -38,7 +42,7 @@ a{
     background-color: rgb(0 0 0 / 0.3);
     animation: menu_back_blur 0.5s linear;
     transform-origin: right;
-    z-index: 4;
+    z-index: 4.5;
 }
 
 @keyframes menu_back_blur {
@@ -52,6 +56,7 @@ a{
 
 .header_section{
     position: fixed;
+    top: 0;
     z-index: 5;
     width: 25%;
     height: 100vh;
@@ -72,13 +77,13 @@ a{
     }
 }
 
-.academy_info h1{
+.academy_name{
     color: red;
     margin: 0;
     padding: 0.5rem;
     text-align: center;
 }
-.academy_info span{
+.emoje{
     color: blue;
 }
 
@@ -132,3 +137,31 @@ a{
 /* ======== header styles ======== */
 
 
+
+/*  ========== footer section styles  ===========*/
+.footer_section{
+    background-color: black;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.footer_div{
+    text-align: center;
+    color: white;
+}
+
+.media a{
+    font-size: 2rem;
+    display: inline-block;
+    margin: 0.3rem;
+    color: white;
+    transition: 0.4s all;
+}
+
+.media a:hover{
+    transform: scale(1.1,1.1) translateY(-3px);
+    color: rgb(174 174 14 / 0.92);
+}
+
+/*  ========== footer section styles  ===========*/
