@@ -1,13 +1,81 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
+    <title>Academy | (⌐■_■)</title>
+
+    <!--  meta teglar  -->
     <meta charset="UTF-8">
-    <title>academiy</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Academya uchun Web platforma.">
+    <meta name="author" content="Qodirboyev Demir">
+
+    <!-- link teglar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+
+    <!--  script teglar  -->
+    <script src="{% static 'js/main.js' %}" defer></script>
+
 </head>
 <body>
+
+    <!-- menu_icon -->
+    <section class="menu_icon" onclick="menu()">
+        <i id="menu_icon" class="fa-solid fa-bars"></i>
+    </section>
+    <!-- /menu_icon -->
+
+    <!-- Header section -->
+    <section class="header_section" id="header_section">
+        <div class="academy_info">
+            <h1 class="academy_name">Academya | <span class="emoje">(⌐■_■)</span></h1>
+            <div class="menu">
+                <ul>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="{% url 'home' %}">Asosiy sahifa</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="{% url 'home' %}">Biz haqimizda</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="">Kurslar</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="">Ustazlar</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="{% url 'students' %}">O'quvchilar</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="{% url 'home' %}/#contact-us_section">Admin bilan bog'lanish</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="user_info">
+            <div class="user">
+                <img src="{% static 'photo/user_photo.jpg' %}" alt="profile_photo">
+                <h3>Name Surname</h3>
+            </div>
+            <div>
+                <span>user_auth</span>
+            </div>
+        </div>
+    </section>
+    <div class="menu_back_blur" id="menu_back" onclick="menu_back_blur()"></div>
+    <!-- /Header section -->
+
     {% for student in object_list %}
     <h1>{{ student.surname }} {{ student.name }}</h1>
     <p>{{ student.course }}</p>
     {% endfor %}
+
+    <!--  footer section  -->
+    <footer class="footer_section" id="footer_section">
+        <div class="container">
+            <div class="footer_div">
+                <div class="media">
+                    <a href="" onclick="alert('Telegram kanal toplimadi😅')"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="" onclick="alert('YouTube kanal toplimadi😅')"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="" onclick="alert('Insatgram account toplimadi😅')"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div>
+                    <p>© 2026 Academy site — Academya uchun web-site.</p>
+                    <span>admin@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  /footer section  -->
 </body>
 </html>

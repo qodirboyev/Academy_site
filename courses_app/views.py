@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import Courses
 # Create your views here.
 
 
@@ -7,4 +7,7 @@ from django.shortcuts import render
 
 def courses_view(request):
     tempalte_name = 'courses_app/courses.html'
-    return render(request, tempalte_name)
+    context = {
+        "courses" : Courses.objects.all()
+    }
+    return render(request, tempalte_name, context)

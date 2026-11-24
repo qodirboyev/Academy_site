@@ -34,11 +34,11 @@
             <h1 class="academy_name">Academya | <span class="emoje">(⌐■_■)</span></h1>
             <div class="menu">
                 <ul>
-                    <li><i class="fa-solid fa-chevron-right"></i><a href="">Asosiy sahifa</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="{% url 'home' %}">Asosiy sahifa</a></li>
                     <li><i class="fa-solid fa-chevron-right"></i><a href="">Biz haqimizda</a></li>
-                    <li><i class="fa-solid fa-chevron-right"></i><a href="">Kurslar</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="{% url 'courses' %}">Kurslar</a></li>
                     <li><i class="fa-solid fa-chevron-right"></i><a href="">Ustazlar</a></li>
-                    <li><i class="fa-solid fa-chevron-right"></i><a href="">O'quvchilar</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="{% url 'students' %}">O'quvchilar</a></li>
                     <li><i class="fa-solid fa-chevron-right"></i><a href="">Admin bilan bog'lanish</a></li>
                 </ul>
             </div>
@@ -79,12 +79,12 @@
         <div class="div_2">
             <!--  nav section  -->
             <nav class="nav_section" id="nav_section">
-                <a href=""><i class="fa-solid fa-house"></i> Asosiy sahifa</a>
-                <a href=""><i class="fa-solid fa-face-smile-wink"></i> Biz haqimizda</a>
+                <a href="#main_section"><i class="fa-solid fa-house"></i> Asosiy sahifa</a>
+                <a href="#about_section"><i class="fa-solid fa-face-smile-wink"></i> Biz haqimizda</a>
                 <a href=""><i class="fa-solid fa-file-pen"></i> Kurslar</a>
                 <a href=""><i class="fa-solid fa-chalkboard-user"></i> Ustazlar</a>
-                <a href=""><i class="fa-solid fa-user-graduate"></i> O'quvchilar</a>
-                <a href=""><i class="fa-solid fa-phone"></i> Admin bilan bog'lanish</a>
+                <a href="{% url 'students' %}"><i class="fa-solid fa-user-graduate"></i> O'quvchilar</a>
+                <a href="#contact-us_section"><i class="fa-solid fa-phone"></i> Admin bilan bog'lanish</a>
             </nav>
             <!--  /nav section  -->
             <!-- result section -->
